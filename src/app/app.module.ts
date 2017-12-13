@@ -6,6 +6,8 @@ import { FormsModule }  from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { RecipeBookComponent } from './recipe-book/recipe-book.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
 
 @NgModule({
@@ -13,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    RecipeBookComponent,
+    ShoppingListComponent,
   ],
   imports: [
     BrowserModule,
