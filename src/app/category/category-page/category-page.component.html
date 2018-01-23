@@ -1,0 +1,41 @@
+  <div class="Catagory">
+          <nav class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+                    <div *ngFor="let crumb of this.state.page.breadcrumbs">
+                      <a class="trackEvent" href="/" data-trackdata="listing page, breadcrumbs">
+                            <span itemprop="name">{{crumb.name}}</span>
+                      </a>
+                </div>
+        </nav>
+          <div class="category-title">
+              <h1>{{this.state.currentCatagory.title}}</h1>
+                <img class="cat-hero" src="this.state.currentCatagory.image"/>"
+          </div>
+
+          <div class="category-container layout-80-20 layout-reverse clear">
+            <div class="col1">
+              <div class="filter-description">
+                {{this.state.currentCatagory.description}}
+              </div>
+
+              <section class="category-index">
+                  <div *ngFor="let crumb of this.state.page.breadcrumbs" class="cat-item">
+                            <img src="sub.image"/>
+                            <h2>"sub.title"</h2>
+                            <ul>
+                              <div CatChildren collection="sub.children"></div>
+                            </ul>
+                    </div>
+              </section>
+              <div CategoryFaqs faqCollection="this.state.currentCatagory.categoryFaqs"></div>"
+              </div>
+            <div class="col2">
+                <div class="category-aside-nav">
+
+                </div>
+                  <div FeaturedBrands brands="this.state.currentCatagory.featuredBrands"></div>
+            </div>
+
+          </div>
+
+        </div>

@@ -6,8 +6,7 @@ import { FormsModule }  from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { RecipeBookComponent } from './recipe-book/recipe-book.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { CategoryPageComponent } from './category/category-page/category-page.component';
 
 
 @NgModule({
@@ -15,8 +14,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    RecipeBookComponent,
-    ShoppingListComponent,
+    CategoryPageComponent,
   ],
   imports: [
     BrowserModule,
